@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ch. Hema Durga - B.Tech CSE Student & Aspiring Web Developer. Portfolio showcasing interactive web projects built with HTML, CSS, JavaScript, and Java.">
+  <meta name="author" content="Ch. Hema Durga">
+  <meta name="keywords" content="Ch Hema Durga, Web Developer, Portfolio, B.Tech CSE, HTML, CSS, JavaScript, Java, NRI Institute of Technology">
+  
+  <title>Ch. Hema Durga | Portfolio - Aspiring Web Developer</title>
+
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background decorative glows -->
+  <div class="bg-glow bg-glow-1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-2" aria-hidden="true"></div>
+
+  <!-- NAVBAR -->
+  <header class="navbar-wrapper" id="navbar">
+    <nav class="navbar container" aria-label="Main Navigation">
+      <a href="#home" class="logo" aria-label="Ch. Hema Durga Homepage">
+        <span class="logo-code">&lt;</span>Hema<span class="logo-accent">.</span><span class="logo-code">/&gt;</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links" id="nav-links" role="menubar">
+        <li role="none"><a href="#home" class="nav-link active" role="menuitem">Home</a></li>
+        <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+        <li role="none"><a href="#skills" class="nav-link" role="menuitem">Skills</a></li>
+        <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
+        <li role="none"><a href="#education" class="nav-link" role="menuitem">Education</a></li>
+        <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+      </ul>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </nav>
+
+    <!-- Mobile Slide-Down Menu -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <ul class="mobile-nav-links">
+        <li><a href="#home" class="mobile-nav-link">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#education" class="mobile-nav-link">Education</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-socials">
+        <a href="https://github.com/hemach838-byte" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/hemach-web123/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+        <a href="mailto:hemach838@gmail.com" aria-label="Email Ch. Hema Durga">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>Available for Opportunities &amp; Projects</span>
+          </div>
+          
+          <h1 class="hero-title">
+            <span class="hero-greeting">Hi, I'm</span>
+            <span class="hero-name">Ch. Hema Durga</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            <span>B.Tech CSE Student &amp; Aspiring Web Developer</span>
+          </p>
+
+          <p class="hero-description">
+            Passionate about building interactive, user-friendly web experiences and continuously growing my development skills.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Projects</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Contact Me</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="hero-socials">
+            <span class="social-label">Connect:</span>
+            <a href="https://github.com/hemach838-byte" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile" title="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/hemach-web123/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile" title="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="mailto:hemach838@gmail.com" class="social-icon" aria-label="Send Email" title="Email: hemach838@gmail.com">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Visual Profile Card -->
+        <div class="hero-visual">
+          <div class="hero-image-frame">
+            <div class="image-glow-ring"></div>
+            <img src="assets/images/hema-durga.jpg" alt="Ch. Hema Durga - B.Tech CSE Student & Aspiring Web Developer" class="hero-img" loading="eager">
+            <div class="hero-floating-card top-left">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              <span>Frontend Dev</span>
+            </div>
+            <div class="hero-floating-card bottom-right">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              <span>B.Tech CSE '28</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="scroll-down-hint">
+        <a href="#about" aria-label="Scroll to About section">
+          <span class="mouse-icon"><span class="wheel"></span></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Get To Know Me</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Portrait & Quick Info Cards -->
+          <div class="about-visual-col">
+            <div class="about-card profile-showcase-card">
+              <div class="about-img-container">
+                <img src="assets/images/hema-durga.jpg" alt="Ch. Hema Durga" class="about-img" loading="lazy">
+                <div class="about-img-overlay">
+                  <div class="overlay-badge">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                    <span>NRI Institute of Technology</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="about-meta-list">
+                <div class="meta-item">
+                  <div class="meta-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                  </div>
+                  <div class="meta-details">
+                    <span class="meta-label">Degree</span>
+                    <strong class="meta-val">B.Tech – CSE</strong>
+                  </div>
+                </div>
+
+                <div class="meta-item">
+                  <div class="meta-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="20" y2="21"></line><line x1="2" y1="9" x2="22" y2="9"></line><polygon points="12 2 20 9 4 9"></polygon><line x1="6" y1="9" x2="6" y2="21"></line><line x1="10" y1="9" x2="10" y2="21"></line><line x1="14" y1="9" x2="14" y2="21"></line><line x1="18" y1="9" x2="18" y2="21"></line></svg>
+                  </div>
+                  <div class="meta-details">
+                    <span class="meta-label">College</span>
+                    <strong class="meta-val">NRI Institute of Technology</strong>
+                  </div>
+                </div>
+
+                <div class="meta-item">
+                  <div class="meta-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                  </div>
+                  <div class="meta-details">
+                    <span class="meta-label">Expected Graduation</span>
+                    <strong class="meta-val">2028</strong>
+                  </div>
+                </div>
+
+                <div class="meta-item">
+                  <div class="meta-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                  </div>
+                  <div class="meta-details">
+                    <span class="meta-label">Location</span>
+                    <strong class="meta-val">Agiripalli, Andhra Pradesh</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Narrative & Focus -->
+          <div class="about-text-col">
+            <div class="about-narrative-card">
+              <h3 class="about-heading">
+                Aspiring Web Developer with a strong curiosity for creating intuitive web experiences.
+              </h3>
+              
+              <p class="about-p">
+                I am a B.Tech Computer Science and Engineering student at <strong>NRI Institute of Technology, Agiripalli</strong>, with a strong interest in web development and software development.
+              </p>
+
+              <p class="about-p">
+                I enjoy building practical and interactive web projects using <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, and <strong>Java</strong>. I am continuously improving my programming and development skills by creating projects and learning modern technologies.
+              </p>
+
+              <p class="about-p">
+                My goal is to become a skilled software/web developer and build useful, user-friendly applications that solve real-world problems.
+              </p>
+
+              <!-- Currently Learning & Focus Highlights -->
+              <div class="focus-box">
+                <div class="focus-header">
+                  <div class="focus-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                  </div>
+                  <h4>Current Focus &amp; Growth</h4>
+                </div>
+                <div class="focus-tags">
+                  <span class="focus-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Clean Semantic HTML &amp; Modern CSS</span>
+                  <span class="focus-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Interactive JavaScript Logic</span>
+                  <span class="focus-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Java Object-Oriented Programming</span>
+                  <span class="focus-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Responsive &amp; Mobile-Friendly Layouts</span>
+                </div>
+              </div>
+
+              <!-- Action buttons in About -->
+              <div class="about-cta-row">
+                <a href="#projects" class="btn btn-primary btn-sm">
+                  <span>Explore Projects</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+                <a href="mailto:hemach838@gmail.com" class="btn btn-outline btn-sm">
+                  <span>Send an Email</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Core Competencies</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Core programming and frontend technologies I actively use to develop interactive web applications.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Java -->
+          <div class="skill-card" data-skill="java">
+            <div class="skill-icon-wrap java-theme">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor"><path d="M8.85 16.84c0 .03-.02.05-.03.07-.35.43-.88.85-1.55 1.1-.38.14-.8.24-1.22.3-.43.05-.88.08-1.33.08-.66 0-1.31-.05-1.92-.15a3.86 3.86 0 0 1-1.37-.53c-.35-.25-.56-.57-.56-.94 0-.17.06-.34.17-.5.2-.28.53-.52.95-.72.63-.3 1.45-.51 2.37-.62a14.7 14.7 0 0 1 1.95-.12c.76 0 1.5.07 2.18.2.53.1 1.01.25 1.39.43.37.18.63.39.75.63.1.2.06.4-.14.65zm1.5-3.34c-.1-.13-.24-.26-.41-.38a5.1 5.1 0 0 0-1.3-.59c-.58-.17-1.26-.29-2.01-.36a17.2 17.2 0 0 0-2.2-.12c-.93 0-1.83.07-2.67.22a5.9 5.9 0 0 0-1.88.66c-.46.28-.73.63-.73 1.02 0 .2.08.4.23.59.26.33.7.6 1.27.82.75.29 1.7.47 2.77.55.9.06 1.83.06 2.76 0 .8-.05 1.56-.16 2.25-.32.61-.14 1.13-.33 1.52-.56.44-.26.68-.56.68-.89 0-.21-.09-.44-.27-.64zm-3.6-4.6c.15.2.22.42.2.66-.02.26-.14.52-.35.77-.28.32-.71.61-1.26.84-.71.3-1.6.5-2.61.57-.86.06-1.74.04-2.58-.06a4.5 4.5 0 0 1-1.63-.52c-.37-.24-.59-.53-.59-.85 0-.18.07-.37.2-.55.22-.3.6-.54 1.1-.72.67-.25 1.52-.41 2.47-.48.91-.06 1.83-.04 2.71.05.74.08 1.4.22 1.93.43.33.13.59.3.73.5a1.1 1.1 0 0 1 .18.36zm1.18 10.98c-1.3.43-2.88.66-4.57.66-1.86 0-3.58-.28-4.94-.78C-.7 19.98-.38 22 1.25 22.8c1.78.87 4.18 1.2 6.78 1.2 2.68 0 5.08-.34 6.79-1.24 1.34-.7 1.2-2.14.2-2.92z"/></svg>
+            </div>
+            <div class="skill-content">
+              <div class="skill-header">
+                <h3 class="skill-name">Java</h3>
+                <span class="skill-tag">Core Language</span>
+              </div>
+              <p class="skill-desc">
+                Object-oriented programming language used for building structured logic, problem-solving, and foundational computer science applications.
+              </p>
+            </div>
+            <div class="skill-footer">
+              <span class="skill-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg> OOP Principles</span>
+              <span class="skill-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="3" x2="6" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></svg> Program Logic</span>
+            </div>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="skill-card" data-skill="javascript">
+            <div class="skill-icon-wrap js-theme">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h18v18H3V3zm13.7 14.5c1.3 0 2.2-.6 2.8-1.5l-1.3-.8c-.4.6-.9.9-1.5.9-.8 0-1.3-.4-1.3-1.4v-5.2h-1.7v5.2c0 1.9 1.1 2.8 3 2.8zm-6.2-.2c.7 0 1.2-.3 1.6-.8l-1.1-.9c-.3.4-.6.6-1 .6-.6 0-1-.3-1-.9 0-.5.3-.8 1.1-1.1l.6-.2c1.4-.5 2.1-1.2 2.1-2.4 0-1.4-1.1-2.4-2.7-2.4-1.2 0-2.1.5-2.7 1.4l1.2.8c.4-.6.8-.8 1.4-.8.6 0 1 .3 1 .8 0 .5-.3.8-1.1 1.1l-.6.2c-1.4.5-2.1 1.2-2.1 2.5 0 1.4 1 2.1 2.6 2.1z"/></svg>
+            </div>
+            <div class="skill-content">
+              <div class="skill-header">
+                <h3 class="skill-name">JavaScript</h3>
+                <span class="skill-tag">Frontend &amp; Interactivity</span>
+              </div>
+              <p class="skill-desc">
+                Core client-side scripting language for DOM manipulation, dynamic filtering, state handling, event listeners, and interactive UI behavior.
+              </p>
+            </div>
+            <div class="skill-footer">
+              <span class="skill-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg> DOM Interaction</span>
+              <span class="skill-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg> Dynamic Filtering</span>
+            </div>
+          </div>
+
+          <!-- HTML -->
+          <div class="skill-card" data-skill="html">
+            <div class="skill-icon-wrap html-theme">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l8 2.5-1.5 14L12 22l-6.5-3.5L4 4.5 12 2zm0 2.2L5.8 6.1l1.2 11.2L12 19.8l5-2.5 1.2-11.2L12 4.2zm-4.5 5.3h9l-.3 2.5h-5.8l.2 2.2h5.3l-.5 4.3-3.4 1-3.4-1-.2-2.2H6.6l.4 3.7 5 1.5 5-1.5.8-7.5H7.5v-2.5z"/></svg>
+            </div>
+            <div class="skill-content">
+              <div class="skill-header">
+                <h3 class="skill-name">HTML</h3>
+                <span class="skill-tag">Markup &amp; Semantics</span>
+              </div>
+              <p class="skill-desc">
+                Standard markup language for constructing clean, accessible, semantic web layouts, proper document hierarchies, and multimedia embedding.
+              </p>
+            </div>
+            <div class="skill-footer">
+              <span class="skill-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg> Semantic Structure</span>
+              <span class="skill-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg> Accessibility</span>
+            </div>
+          </div>
+
+          <!-- CSS -->
+          <div class="skill-card" data-skill="css">
+            <div class="skill-icon-wrap css-theme">
+              <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l8 2.5-1.5 14L12 22l-6.5-3.5L4 4.5 12 2zm0 2.2L5.8 6.1l1.2 11.2L12 19.8l5-2.5 1.2-11.2L12 4.2zm4.3 3.8H7.7l.2 2.2h8l-.3 2.5h-5.4l.2 2.2h4.9l-.5 4.3-2.8.8-2.8-.8-.2-1.7H7.3l.3 3.2 4.4 1.3 4.4-1.3.8-7.5H9.6v-2.2h6.7l.2-2.2z"/></svg>
+            </div>
+            <div class="skill-content">
+              <div class="skill-header">
+                <h3 class="skill-name">CSS</h3>
+                <span class="skill-tag">Styling &amp; Responsiveness</span>
+              </div>
+              <p class="skill-desc">
+                Cascading style sheets for crafting modern responsive designs, Flexbox, CSS Grid layouts, custom UI components, and fluid animations.
+              </p>
+            </div>
+            <div class="skill-footer">
+              <span class="skill-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg> Responsive Design</span>
+              <span class="skill-feature"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg> Flexbox &amp; Grid</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Projects</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            A showcase of my recent frontend projects with source code repositories and live interactive demonstrations.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- PROJECT 1: PhoneShop -->
+          <article class="project-card" data-project-id="phoneshop">
+            <div class="project-preview-wrap">
+              <img src="assets/images/project-phoneshop.png" alt="PhoneShop - Phone Shopping UI" class="project-img" loading="eager">
+              <div class="project-overlay">
+                <button class="btn-expand-modal" aria-label="View project details for PhoneShop" data-target="phoneshop">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                  <span>View Details</span>
+                </button>
+              </div>
+              <div class="project-badge">E-Commerce UI</div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">PhoneShop – Phone Shopping UI</h3>
+              <p class="project-description">
+                A modern responsive phone shopping interface designed to display phones with categories, brands, search functionality, product cards, favorites, cart UI, and product details.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://hemach838-byte.github.io/phone1/" target="_blank" rel="noopener noreferrer" class="btn btn-project-primary" aria-label="Open PhoneShop live demo">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>Live Demo</span>
+                </a>
+                <a href="https://github.com/hemach838-byte/phone1" target="_blank" rel="noopener noreferrer" class="btn btn-project-github" aria-label="View PhoneShop GitHub repository">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Student Management System -->
+          <article class="project-card" data-project-id="student-mgmt">
+            <div class="project-preview-wrap">
+              <img src="assets/images/project-student-mgmt.png" alt="Student Management System" class="project-img" loading="eager">
+              <div class="project-overlay">
+                <button class="btn-expand-modal" aria-label="View project details for Student Management System" data-target="student-mgmt">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                  <span>View Details</span>
+                </button>
+              </div>
+              <div class="project-badge">Data Filtering UI</div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Student Management System</h3>
+              <p class="project-description">
+                A frontend project for displaying and filtering student information. It provides a simple interface where users can search students and view details such as name, roll number, and branch.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://hemach838-byte.github.io/fil-stu/" target="_blank" rel="noopener noreferrer" class="btn btn-project-primary" aria-label="Open Student Management System live demo">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>Live Demo</span>
+                </a>
+                <a href="https://github.com/hemach838-byte/fil-stu" target="_blank" rel="noopener noreferrer" class="btn btn-project-github" aria-label="View Student Management System GitHub repository">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: YouTube Clone -->
+          <article class="project-card" data-project-id="youtube-clone">
+            <div class="project-preview-wrap">
+              <img src="assets/images/project-youtube.png" alt="YouTube Clone" class="project-img" loading="eager">
+              <div class="project-overlay">
+                <button class="btn-expand-modal" aria-label="View project details for YouTube Clone" data-target="youtube-clone">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                  <span>View Details</span>
+                </button>
+              </div>
+              <div class="project-badge">Video Platform UI</div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">YouTube Clone</h3>
+              <p class="project-description">
+                A frontend recreation of a YouTube-style video browsing interface with navigation, search, video cards, thumbnails, categories, and a responsive layout.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://hemach838-byte.github.io/pro-4/" target="_blank" rel="noopener noreferrer" class="btn btn-project-primary" aria-label="Open YouTube Clone live demo">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>Live Demo</span>
+                </a>
+                <a href="https://github.com/hemach838-byte/pro-4" target="_blank" rel="noopener noreferrer" class="btn btn-project-github" aria-label="View YouTube Clone GitHub repository">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: Image Gallery -->
+          <article class="project-card" data-project-id="image-gallery">
+            <div class="project-preview-wrap">
+              <img src="assets/images/project-gallery.png" alt="Image Gallery" class="project-img" loading="eager">
+              <div class="project-overlay">
+                <button class="btn-expand-modal" aria-label="View project details for Image Gallery" data-target="image-gallery">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                  <span>View Details</span>
+                </button>
+              </div>
+              <div class="project-badge">Interactive Gallery</div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Image Gallery</h3>
+              <p class="project-description">
+                An interactive image gallery project created during my web development internship/project work. It focuses on presenting images in a clean and interactive gallery interface.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://hemach838-byte.github.io/codealpha_tasks/" target="_blank" rel="noopener noreferrer" class="btn btn-project-primary" aria-label="Open Image Gallery live demo">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>Live Demo</span>
+                </a>
+                <a href="https://github.com/hemach838-byte/codealpha_tasks" target="_blank" rel="noopener noreferrer" class="btn btn-project-github" aria-label="View Image Gallery GitHub repository">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">Education</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="education-timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-badge">Undergraduate Degree</span>
+                  <h3 class="degree-title">B.Tech – Computer Science and Engineering</h3>
+                  <h4 class="college-name">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><line x1="4" y1="21" x2="20" y2="21"></line><line x1="2" y1="9" x2="22" y2="9"></line><polygon points="12 2 20 9 4 9"></polygon><line x1="6" y1="9" x2="6" y2="21"></line><line x1="10" y1="9" x2="10" y2="21"></line><line x1="14" y1="9" x2="14" y2="21"></line><line x1="18" y1="9" x2="18" y2="21"></line></svg>
+                    <span>NRI Institute of Technology, Agiripalli</span>
+                  </h4>
+                </div>
+                <div class="graduation-year-pill">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line><path d="m9 16 2 2 4-4"></path></svg>
+                  <span>Expected Graduation: 2028</span>
+                </div>
+              </div>
+
+              <p class="timeline-text">
+                Currently pursuing B.Tech in Computer Science and Engineering, building foundational knowledge in computer science principles, algorithms, object-oriented programming in Java, and modern web application development.
+              </p>
+
+              <div class="timeline-highlights">
+                <span class="tag-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg> Computer Science Core</span>
+                <span class="tag-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg> Web Technologies</span>
+                <span class="tag-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg> Object-Oriented Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Let's Connect</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            I'm always interested in learning, building projects, and connecting with other developers. Feel free to reach out.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Information & Quick Channels -->
+          <div class="contact-info-col">
+            <div class="contact-card">
+              <h3 class="contact-card-title">Reach Out Directly</h3>
+              <p class="contact-card-desc">
+                Whether you have an inquiry, feedback on my projects, or an opportunity to discuss, my inbox is always open.
+              </p>
+
+              <div class="contact-methods">
+                
+                <!-- Email Method -->
+                <div class="contact-method-item">
+                  <div class="method-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  </div>
+                  <div class="method-body">
+                    <span class="method-title">Email</span>
+                    <a href="mailto:hemach838@gmail.com" class="method-link">hemach838@gmail.com</a>
+                  </div>
+                  <button class="btn-copy" id="btn-copy-email" aria-label="Copy email address" title="Copy to clipboard">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  </button>
+                </div>
+
+                <!-- LinkedIn Method -->
+                <div class="contact-method-item">
+                  <div class="method-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                  </div>
+                  <div class="method-body">
+                    <span class="method-title">LinkedIn</span>
+                    <a href="https://www.linkedin.com/in/hemach-web123/" target="_blank" rel="noopener noreferrer" class="method-link">
+                      in/hemach-web123
+                    </a>
+                  </div>
+                  <a href="https://www.linkedin.com/in/hemach-web123/" target="_blank" rel="noopener noreferrer" class="method-action-link" aria-label="Open LinkedIn Profile">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  </a>
+                </div>
+
+                <!-- GitHub Method -->
+                <div class="contact-method-item">
+                  <div class="method-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  </div>
+                  <div class="method-body">
+                    <span class="method-title">GitHub</span>
+                    <a href="https://github.com/hemach838-byte" target="_blank" rel="noopener noreferrer" class="method-link">
+                      github.com/hemach838-byte
+                    </a>
+                  </div>
+                  <a href="https://github.com/hemach838-byte" target="_blank" rel="noopener noreferrer" class="method-action-link" aria-label="Open GitHub Profile">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  </a>
+                </div>
+
+              </div>
+
+              <!-- College Campus Indicator -->
+              <div class="contact-location-pill">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>NRI Institute of Technology, Agiripalli</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-col">
+            <div class="contact-card">
+              <h3 class="contact-card-title">Send a Message</h3>
+              <p class="contact-card-desc">
+                Fill out the form below to send an email message directly to my inbox.
+              </p>
+
+              <form id="contact-form" class="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="user-name">Your Name <span class="required-star">*</span></label>
+                  <div class="input-wrap">
+                    <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    <input type="text" id="user-name" name="name" placeholder="e.g. John Doe" required autocomplete="name">
+                  </div>
+                  <span class="field-error" id="name-error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="user-email">Your Email <span class="required-star">*</span></label>
+                  <div class="input-wrap">
+                    <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    <input type="email" id="user-email" name="email" placeholder="e.g. john@example.com" required autocomplete="email">
+                  </div>
+                  <span class="field-error" id="email-error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="user-message">Your Message <span class="required-star">*</span></label>
+                  <div class="input-wrap textarea-wrap">
+                    <svg class="input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                    <textarea id="user-message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                  </div>
+                  <span class="field-error" id="message-error"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block" id="btn-submit-contact">
+                  <span>Send Message</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+              </form>
+
+              <!-- Form Status / Toast Message -->
+              <div id="form-feedback" class="form-feedback" aria-live="polite"></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <a href="#home" class="footer-logo">
+          <span class="logo-code">&lt;</span>Hema<span class="logo-accent">.</span><span class="logo-code">/&gt;</span>
+        </a>
+        <p class="footer-tagline">
+          B.Tech CSE Student &amp; Aspiring Web Developer
+        </p>
+        <div class="footer-links-row">
+          <a href="https://github.com/hemach838-byte" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <span class="footer-sep">|</span>
+          <a href="https://www.linkedin.com/in/hemach-web123/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <span class="footer-sep">|</span>
+          <a href="mailto:hemach838@gmail.com">Email</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; 2026 Ch. Hema Durga. Built with passion for web development.
+        </p>
+        <button id="btn-back-to-top" class="back-to-top" aria-label="Back to top of page" title="Scroll to top">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PROJECT DETAILS MODAL -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close project modal">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <div class="modal-content" id="modal-dynamic-content">
+        <!-- Content will be injected dynamically via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Notification Toast Container -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
